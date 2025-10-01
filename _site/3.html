@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    Notes on Eleventy
+
+    Ruoyu
+    
+    Thu Oct 02 2025 20:00:00 GMT-0400 (北美东部夏令时间)
+
+    <h1>Notes on Eleventy</h1>
+<p>Internet</p>
+<p>‣</p>
+<p>SSR&amp;SSG</p>
+<pre><code class="language-jsx">const express = require(&quot;express&quot;);
+const app = express();
+
+app.get(&quot;/&quot;, (req, res) =&gt; {
+  const now = new Date().toLocaleTimeString();
+  res.send(`
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;&lt;title&gt;Dynamic with Node&lt;/title&gt;&lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Welcome!&lt;/h1&gt;
+        &lt;p&gt;The time on the server is: ${now}&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  `);
+});
+
+app.listen(3000, () =&gt; {
+  console.log(&quot;Server running at http://localhost:3000&quot;);
+});
+</code></pre>
+<p><code>npm init -y</code> create a node package</p>
+<p><code>npm install express</code> install Express to run Node apps</p>
+<p><code>node server.js</code> run file by cmd+right click link</p>
+<p>├── dynamic
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+└─── static
+└── static.html</p>
+<p>https://youtu.be/0EqKnvzo3no?si=9ShyaCBgxkzRz112</p>
+<p>https://youtu.be/TNQsmPf24go?si=fNWdVz53z2W0zSng</p>
+<h2>Things I Learned</h2>
+<p>the basic set for eleventy</p>
+
+    
+</body>
+</html>
