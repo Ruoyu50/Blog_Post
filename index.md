@@ -1,4 +1,4 @@
 ---
 layout: index.njk
-title: My main page
+title: Blog post landing page
 ---
