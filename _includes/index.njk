@@ -18,14 +18,14 @@
     <h3>Long Posts</h3>
     <ul>
       {% for post in collections.long %}
-        <li><a href="/{{ post.data.permalink }}">{{post.data.title}}</a></li>
+        <li><a href="{{ post.data.permalink }}">{{post.data.title}}</a></li>
       {% endfor %}
     </ul>
 
     <h3>Short Posts</h3>
     <ul>
       {% for post in collections.short %}
-        <li><a href="/{{ post.data.permalink }}">{{post.data.title}}</a></li>
+        <li><a href="{{ post.data.permalink }}">{{post.data.title}}</a></li>
       {% endfor %}
     </ul>
   </section>
