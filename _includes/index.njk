@@ -15,20 +15,27 @@
   </header>
 
   <section>
-    <h3>Long Posts</h3>
+    <h3>Journal</h3>
     <ul>
       {% for post in collections.long %}
         <li><a href="{{ post.data.permalink }}">{{post.data.title}}</a></li>
       {% endfor %}
     </ul>
 
-    <h3>Short Posts</h3>
+    <h3>Track</h3>
     <ul>
       {% for post in collections.short %}
         <li><a href="{{ post.data.permalink }}">{{post.data.title}}</a></li>
       {% endfor %}
     </ul>
   </section>
+    <h3>In-class_tests</h3>
+    <ul>
+      {% for post in collections.long %}
+        <li><a href="{{ post.data.permalink }}">{{post.data.title}}</a></li>
+      {% endfor %}
+    </ul>
+
 
     {{ content|safe }}
     
